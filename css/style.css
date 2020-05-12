@@ -1,0 +1,39 @@
+/* Aula inicial :D */
+body {
+    background-image: url("https://www.xmple.com/wallpaper/blue-pink-linear-gradient-1920x1080-c2-6495ed-ffb6c1-a-0-f-14.svg");
+    background-size: auto;
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+  }
+  
+  .menu ul {
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  a {
+    color: cornflowerblue;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .site-subtitle,
+  .site-title {
+    color: #F9F9F9;
+    text-align: center;
+  }
+
+  .site-subtitle {
+    font-style: italic;
+  }
