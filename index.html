@@ -7,37 +7,37 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-
-
+  <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
       <nav class="menu">
         <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#menu-home"></i>Início</a></li>
+          <li><a href="#menu-sobre">Sobre</a></li>
+          <li><a href="#menu-portfolio">Portfólio</a></li>
+          <li><a href="#menu-contato">Contato</a></li>
         </ul>
       </nav>
-      <div class="titulo">
+      <div class="titulo" id="menu-home">
+        <img src="./images/perfil 1.jpg" alt="Foto Pessoal" class="user">
         <h1 class="site-title">Débora C M Paganini</h1>
         <h2 class="site-subtitle">UX Designer e Web Developer</h2>
       </div>
       </header>
-      <section class="sobre">
+      <section class="sobre" id="menu-sobre">
         <h2>Sobre</h2>
         <h3>De Contadora a Programadora</h3>
         <div class="grid">
-          <p>Sempre gostei de matemática e de exercícios de racicínio lógico, na hora de escolher a faculdade meu lado prática e detalhista me guiou à contabilidade. Aos 22 me formei contadora e entrei no concurso público da Caixa Econômica Federal. Aos 24 terminei o MBA em auditoria e fui migrando de áreas dentro da Caixa até achar alguma que me fizesse querer ficar... achei por um tempo, e então entendi que as coisas mudam, que a gente muda. Descobri que podia me reinventar, que o desafio é um grande motivador.
+          <p>Apaixonada por livros, sempre gostei de aprender, e como muitas pessoas da minha idade, não trabalho com a minha primeira formação mas acredito que conhecimento sempre se soma. Atualmente trabalho na área de inovação da Caixa Ecônomica Federal desenvolvendo projetos digitais.
           </p>
-          <p> Concluí o curso de Produção Multimídia em 2019 e fui pra área mais desafiadora que pude encontrar: a de Inovação. Fiz minha certificação em UX Designer e no processo me apaixonei pelo Figma.
-          Além da prototipação, outra paixão que descobri foi a de Facilitar Dinâmicas como Design Sprints e Lean Inception, fui estudar mais e agora não consigo parar rs.
-          No meio disso tudo é impossível negar o impacto da tecnologia, fui estudar então programação e consegui no desenvolvimento Front-End unir vários interesses.</p>
+          <p>Minha útlima formação foi em Produção Multimídia, hoje sou UX Designer certificada e Figma Lover.
+          Além da prototipação, outra paixão que descobri foi a de facilitar dinâmicas de Design Sprint e Lean Inception.
+          Confesso que a tecnologia me cativou, e hoje estudo programação porque encontrei no desenvolvimento Front-End a união de vários interesses.</p>
         </div>
       </section>
-        <section class="portfolio">
+        <section class="portfolio" id="menu-portfolio">
           <h2>Projetos</h2>
             <div class="grid">
               <figure>
@@ -79,14 +79,20 @@
             </div>
         </section>
 
-        <section class="contato">
+        <section class="contato" id="menu-contato">
           <h2>Contato</h2>
-          <ul class="redes-sociais">
-            <li>Linkedin</li>
-            <li>GitHub</li>
-          </ul>
+
+          <div class="grid-icons">
+            <a target="_blanck" href="https://github.com/deboracmp">
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/d%C3%A9bora-paganini-900b1b18a/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </section>
       </body>
 <footer>
 </footer>
 </html>
+

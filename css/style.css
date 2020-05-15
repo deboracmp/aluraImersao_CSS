@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,15 +37,15 @@ header {
   background-color: #F9F9F9;
   position: fixed;
   top: 0;
-  width: 100vw;;
+  width: 100vw;
+  z-index: 1;
 }
 
 .menu ul {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 .menu li {
@@ -53,15 +53,56 @@ header {
  }
 
 .menu a {
-  color: cornflowerblue;
+  color:#5D87E5;
   display: block;
   font-size: 0.8em;
-  padding: 0.3em;
+  padding: 0.5em;
   text-decoration: none;
+  transition: background-color 2s;
 }
 
-a:hover {
-  text-decoration: underline;
+.menu a:active,
+.menu a:hover {
+  background-color: #5D87E5;
+  color: #F9F9F9;
+ 
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*transform: scale(0.8) translateY(20px);
+  opacity: 0;
+  animation: ease 2s animacaoTitulo forwards;*/
+}
+/*
+@keyframes animacaoTitulo {
+  
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+.titulo:hover {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+*/
+
+
+.user {
+  width: 150px;
+  object-fit: fill;
+  border-radius: 50%;
+  position: center;
+  border: 2px solid #F9F9F9;
+  background-repeat: no-repeat;
+  /*transition: transform 500ms; */
+}
+
+.user:hover {
+  transform: scale(1.05);
 }
 
 .site-title {
@@ -122,14 +163,21 @@ a:hover {
   font-family: 'Pacifico', cursive;
   font-size: 2em;
   font-weight: 200;
-  margin-bottom: 1em;
+  padding: 1em;
   text-align: center;
+}
+
+.sobre h2:hover,
+.portfolio h2:hover,
+.contato h2:hover {
+  color: #FEACB9;
 }
 
 .sobre h3 {
   color: #F9F9F9;
   font-style: italic;
   text-align: center;
+
 }
 
 .sobre p {
@@ -158,14 +206,11 @@ a:hover {
 
 .portfolio {
   padding: 2em;
-}
-
-.portfolio figure {
+  min-height: 100vh;
   text-align: center;
 }
 
-figure,
-.redes-sociais {
+figure {
   color: #F9F9F9;
   display: inline-block;
   font-style: italic;
@@ -177,11 +222,30 @@ figure,
   object-fit: cover;
   object-position: top;
   border-radius: 2px;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.05);
 }
 
 .contato {
+  padding: 2em;
+  min-height: 50vh;
   text-align: center;
-  margin: 2em;
+}
+.contato a {
+  color: #F9F9F9;
+  font-size: 3em;
+  padding: 0.5em;
+  text-decoration: none;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-shadow: 2px 2px 10px #FEACB9;
+
 }
 
 footer {
